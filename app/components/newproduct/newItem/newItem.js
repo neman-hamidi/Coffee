@@ -1,10 +1,17 @@
+import Image from "next/image";
 import React from "react";
 
-export default function newItem({ title, price, price2, discount, children }) {
+export default function newItem({ title, price, price2, discount, src }) {
   return (
-    <div className="text-center mb-5">
+    <section className="text-center mb-5">
       <div className="relative">
-        {children}
+        <Image
+          src={src}
+          width={170}
+          height={170}
+          alt="product-img"
+          className="rounded-md mx-auto"
+        />
         <span className="absolute top-2 right-8 text-white bg-brownMain-light p-2 text-xs rounded-full">
           {discount}%
         </span>
@@ -15,12 +22,15 @@ export default function newItem({ title, price, price2, discount, children }) {
           <del className="text-zinc-400">تومان {price}</del>
         </div>
         <div>
-          <p className="text-brownMain-light">تومان {price2}</p>
+          <h3 className="text-brownMain-light">تومان {price2}</h3>
         </div>
       </div>
-      <button type="submit" className="px-3 py-2 mt-2 bg-brownMain-light rounded-full lg:text-sm">
+      <button
+        type="submit"
+        className="px-3 py-2 mt-2 bg-brownMain-light rounded-full lg:text-sm"
+      >
         افزودن به سبد خرید
       </button>
-    </div>
+    </section>
   );
 }
