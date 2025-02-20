@@ -1,5 +1,5 @@
-![Logo](public/images/cafe-next.png)
-![Logo](public/images/cafe-next-phone.png)
+![Logo](public/images/cafe-next.jpg)
+![Logo](public/images/cafe-next-phone.jpg)
 This is a [Next.js](https://nextjs.org) project TailwindCss with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
